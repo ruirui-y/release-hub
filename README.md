@@ -28,8 +28,8 @@ release-hub/
 
 国内优先 Gitee（GitHub 直连经常不通），GitHub 只作兜底。
 
-> **待办**：Gitee 侧仓库地址尚未核实，上面 `bai-maxifeng/release-hub` 是按 QmlScrcpy 的账号推的。
-> 建好后确认一下，不对就全仓库替换。
+> Gitee 侧已核实：`bai-maxifeng/release-hub`（2026-11-16 用 `git ls-remote` 确认存在，HEAD 与 GitHub 同步）。
+> 页面上显示的 `ruirui-y/release-hub` 是「导入来源」标识，不是仓库地址。
 
 ## Release tag 规范
 
@@ -48,9 +48,11 @@ MiNiWorld-v1.0.0
     "latest": "1.0.0",
     "minimum": "1.0.0",
     "url": "https://github.com/ruirui-y/release-hub/releases",
+    "url_cn": "https://gitee.com/bai-maxifeng/release-hub/releases",
     "notes": "一句话说明这版改了什么",
     "published_at": "2026-11-16",
-    "exe": "安装包直链",
+    "exe": "GitHub 安装包直链",
+    "exe_cn": "Gitee 安装包直链",
     "size": 48084732,
     "sha256": "64 位小写十六进制"
 }
@@ -60,11 +62,27 @@ MiNiWorld-v1.0.0
 |---|---|---|
 | `latest` | 最新版本号，和本地版本比 | 客户端认为没更新 |
 | `minimum` | 最低可用版本，低于它就强制更新 | 只软提示，不硬拦 |
-| `url` | 下载页面，给人点 | 「去下载」按钮打不开 |
-| `exe` | 安装包直链，给 curl 拉 | 不能自动更新，按钮退回「去下载」 |
+| `url` | 国外下载页（GitHub） | 「去下载」按钮打不开 |
+| `url_cn` | 国内下载页（Gitee） | 国内用户退回用 `url` |
+| `exe` | 国外安装包直链（GitHub） | 国外用户退用 `exe_cn` |
+| `exe_cn` | 国内安装包直链（Gitee） | 国内用户退回用 `exe` |
 | `size` | 字节数，校验完整性 | 跳过大小检查 |
 | `sha256` | 安装包指纹，64 位十六进制 | **不能自动更新**，按钮退回「去下载」 |
 | `notes` | 悬停提示里的一句话 | 不显示说明 |
+
+## 国内国外怎么选（客户端不用探测网络）
+
+客户端先拉这份 JSON，**记下它是从哪个源拿到的**，然后：
+
+```
+从 Gitee 拿到  → exe_cn + url_cn   （说明国内链路通）
+从 GitHub 拿到 → exe   + url       （国内不通，只能走海外）
+```
+
+不 ping、不测速、不判国家。来源本身就是答案。
+
+`size` 和 `sha256` **只有一份**，前提是两边放的是**同一个安装包**（字节完全一致）。
+将来如果要出「国内版 / 国外版」功能不同的包，`sha256` 就得拆成两个键，现在不预留。
 
 ## 发版流程
 

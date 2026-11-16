@@ -2,9 +2,11 @@
     "latest": "0.0.0",
     "minimum": "0.0.0",
     "url": "https://github.com/ruirui-y/release-hub/releases",
+    "url_cn": "https://gitee.com/bai-maxifeng/release-hub/releases",
     "notes": "待发布首个版本",
     "published_at": "2026-11-16",
     "exe": "",
+    "exe_cn": "",
     "size": 0,
     "sha256": ""
 }
