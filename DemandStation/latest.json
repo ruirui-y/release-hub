@@ -1,12 +1,12 @@
 {
-    "latest": "1.0.0",
+    "latest": "1.0.1",
     "minimum": "1.0.0",
     "url": "https://github.com/ruirui-y/release-hub/releases",
     "url_cn": "https://gitee.com/bai-maxifeng/release-hub/releases",
-    "notes": "首个对外版本",
+    "notes": "版本检查改读静态 JSON，安装包不再经服务端分发",
     "published_at": "2026-11-16",
-    "exe": "",
-    "exe_cn": "",
-    "size": 0,
-    "sha256": ""
+    "exe": "https://github.com/ruirui-y/release-hub/releases/download/DemandStation-v1.0.1/DemandStation_Setup_1.0.1.exe",
+    "exe_cn": "https://gitee.com/bai-maxifeng/release-hub/releases/download/DemandStation-v1.0.1/DemandStation_Setup_1.0.1.exe",
+    "size": 50400904,
+    "sha256": "e7c4478d6f393fbc27dd8294d8c1becae722c3f4feec11bebc5abc99b46013e0"
 }
