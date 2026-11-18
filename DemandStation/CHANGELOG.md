@@ -10,13 +10,13 @@ VR 体验馆管理系统（Windows 客户端 + 服务端）。
 - 安装包内的 PvP 游戏配置换成当前标准版：`EnableAI` 从 0 改回 1、`GunOffset` 补上 `0.0,-23,180`、`MapSize` 从 `15mx9m` 改为 `6mx8m`、`MaxAINum` 从 0 改为 6，并补齐 `ID` / `Nick` / `Team` / `HaveGun` / `TrueGearMac` 等 9 个字段
 - PvP 四个地图（Science / Sport / SciFi / Sky）的尺寸列表补上 `9mx9m`，原来只有 6 项，界面选不到这个尺寸
 - Pack 目录只保留 PvP，清掉代码从未读取的 `Config`、路径对不上一直没生效的 `MiNiWorld` Configs、以及当前不发布的 `Dragon`
-- 安装包新增 `[InstallDelete]`：装前删掉 `{app}\Pack`，让覆盖安装能清掉早期版本遗留的废弃游戏目录
+- 安装包新增 `[InstallDelete]`，只删 `Pack\Config` / `Pack\MiNiWorld` / `Pack\Dragon` 三个废弃子目录，不碰 `{app}\Pack` 本身，避免把用户自己放进去的游戏本体一起删掉
 
 变更：
 - 只删 `Pack` 一个目录，`ClientInstall\Configs\` 下的设备缓存 `local_data.db`、账号配置 `app_settings.json`、语言皮肤设置全部保留
 
-安装包：`DemandStation_Setup_1.0.1.exe`，50,355,023 字节，
-sha256 `f7716ec92c92e20096be951df4d52228e0ea81cffb6fabe010fced33f2f9330b`
+安装包：`DemandStation_Setup_1.0.1.exe`，50,355,052 字节，
+sha256 `dc4d0c66d3e7904d902c97a0fcae5d1b896b0af1ba338ed1bc36220c0c4a2f59`
 
 > 这个版本号此前曾用于内部验证更新链路，对应发行版与安装包已删除，此处为重新发布。
 
