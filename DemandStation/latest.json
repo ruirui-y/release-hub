@@ -3,10 +3,10 @@
     "minimum": "1.0.0",
     "url": "https://github.com/ruirui-y/release-hub/releases",
     "url_cn": "https://gitee.com/bai-maxifeng/release-hub/releases",
-    "notes": "修复安装包内的 PvP 游戏配置，Pack 目录只保留 PvP",
+    "notes": "修复安装包内的 PvP 游戏配置、补上 9mx9m 地图尺寸、Pack 目录只保留 PvP",
     "published_at": "2026-11-18",
     "exe": "https://github.com/ruirui-y/release-hub/releases/download/DemandStation-v1.0.1/DemandStation_Setup_1.0.1.exe",
     "exe_cn": "https://gitee.com/bai-maxifeng/release-hub/releases/download/DemandStation-v1.0.1/DemandStation_Setup_1.0.1.exe",
-    "size": 50356792,
-    "sha256": "d3286b6107be5919ddcec6699085aafe5462f2fee453a37e97badec2dad3d3f0"
+    "size": 50355023,
+    "sha256": "f7716ec92c92e20096be951df4d52228e0ea81cffb6fabe010fced33f2f9330b"
 }
