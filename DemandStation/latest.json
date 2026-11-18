@@ -1,12 +1,12 @@
 {
-    "latest": "1.0.0",
+    "latest": "1.0.1",
     "minimum": "1.0.0",
     "url": "https://github.com/ruirui-y/release-hub/releases",
     "url_cn": "https://gitee.com/bai-maxifeng/release-hub/releases",
-    "notes": "首个正式版本：设备管理、游戏控制、离线优先、会员支付、软件更新",
-    "published_at": "2026-11-16",
-    "exe": "https://github.com/ruirui-y/release-hub/releases/download/DemandStation-v1.0.0/DemandStation_Setup_1.0.0.exe",
-    "exe_cn": "https://gitee.com/bai-maxifeng/release-hub/releases/download/DemandStation-v1.0.0/DemandStation_Setup_1.0.0.exe",
-    "size": 50357847,
-    "sha256": "06e33737956d376a112bf0b1058fc6f6d86ccfe0137ab771a89a77b1825219d3"
+    "notes": "修复安装包内的 PvP 游戏配置，Pack 目录只保留 PvP",
+    "published_at": "2026-11-18",
+    "exe": "https://github.com/ruirui-y/release-hub/releases/download/DemandStation-v1.0.1/DemandStation_Setup_1.0.1.exe",
+    "exe_cn": "https://gitee.com/bai-maxifeng/release-hub/releases/download/DemandStation-v1.0.1/DemandStation_Setup_1.0.1.exe",
+    "size": 50356792,
+    "sha256": "d3286b6107be5919ddcec6699085aafe5462f2fee453a37e97badec2dad3d3f0"
 }
